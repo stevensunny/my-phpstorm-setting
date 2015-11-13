@@ -1,0 +1,37 @@
+<templateSet group="PHP">
+  <template name="emulatorextension" value="use GSSupport\Integration\EmulatorExtensionTrait;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="emulator" value="use GSSupport\Integration\EmulatorExtensionTrait;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="factory" value="use Laracasts\TestDummy\Factory;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pd" value="print_r('&lt;pre&gt;');&#10;var_dump($VARIABLE$);&#10;print_r('&lt;/pre&gt;');&#10;die;" description="dd with &lt;pre&gt; wrapper" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="section" value="/*&#10;|--------------------------------------------------------------------------&#10;| $SECTION_NAME$&#10;|--------------------------------------------------------------------------&#10;| $DESCRIPTION$&#10;*/" toReformat="false" toShortenFQNames="true">
+    <variable name="SECTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="test" value="/** @test */&#10;public function it_$NAME$() {&#10;    $END$&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
