@@ -3,9 +3,16 @@
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
+  <action id="GotoSymbol">
+    <keyboard-shortcut first-keystroke="meta r" />
+  </action>
   <action id="ParameterInfo" />
+  <action id="Refresh" />
+  <action id="Replace" />
+  <action id="Rerun" />
   <action id="Run">
     <keyboard-shortcut first-keystroke="meta t" />
   </action>
+  <action id="UsageView.Rerun" />
   <action id="Vcs.UpdateProject" />
 </keymap>
