@@ -34,4 +34,30 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="textfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot;&gt;$PROPERNAME$:&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; value=&quot;{{ Input::old('$NAME$') }}&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap textfield" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERNAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="passwordfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot;&gt;$PROPERNAME$:&lt;/label&gt;&#10;    &lt;input type=&quot;password&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; value=&quot;{{ Input::old('$NAME$') }}&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap password field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="submitfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;$NAME$&lt;/button&gt;&#10;&lt;/div&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
