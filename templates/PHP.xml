@@ -43,9 +43,9 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="passwordfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot;&gt;$PROPERNAME$:&lt;/label&gt;&#10;    &lt;input type=&quot;password&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; value=&quot;{{ Input::old('$NAME$') }}&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap password field" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="PROPERNAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="passwordfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$PASSWORD$&quot;&gt;$LABEL$:&lt;/label&gt;&#10;    &lt;input type=&quot;password&quot; name=&quot;$PASSWORD$&quot; id=&quot;$PASSWORD$&quot; class=&quot;form-control&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap password field" toReformat="false" toShortenFQNames="true">
+    <variable name="PASSWORD" expression="" defaultValue="password" alwaysStopAt="false" />
+    <variable name="LABEL" expression="" defaultValue="Password" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
