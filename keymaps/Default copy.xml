@@ -1,5 +1,8 @@
 <keymap version="1" name="Default copy" parent="Mac OS X 10.5+">
   <action id="FileChooser.TogglePathShowing" />
+  <action id="FileStructurePopup">
+    <keyboard-shortcut first-keystroke="meta e" />
+  </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
@@ -7,6 +10,7 @@
     <keyboard-shortcut first-keystroke="meta r" />
   </action>
   <action id="ParameterInfo" />
+  <action id="RecentFiles" />
   <action id="Refresh" />
   <action id="Replace" />
   <action id="Rerun" />
@@ -29,5 +33,8 @@
     <keyboard-shortcut first-keystroke="ctrl alt up" />
   </action>
   <action id="UsageView.Rerun" />
+  <action id="Vcs.ShowMessageHistory">
+    <keyboard-shortcut first-keystroke="ctrl m" />
+  </action>
   <action id="Vcs.UpdateProject" />
 </keymap>
