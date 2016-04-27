@@ -9,6 +9,7 @@
   <action id="GotoSymbol">
     <keyboard-shortcut first-keystroke="meta r" />
   </action>
+  <action id="MethodHierarchy" />
   <action id="ParameterInfo" />
   <action id="RecentFiles" />
   <action id="Refresh" />
