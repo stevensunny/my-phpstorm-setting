@@ -8,16 +8,17 @@
   <action id="FileChooser.GotoDesktop" />
   <action id="FileChooser.TogglePathShowing" />
   <action id="FileStructurePopup">
-    <keyboard-shortcut first-keystroke="meta e" />
+    <keyboard-shortcut first-keystroke="meta r" />
   </action>
   <action id="GotoFile">
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
-  <action id="GotoSymbol">
-    <keyboard-shortcut first-keystroke="meta r" />
-  </action>
+  <action id="GotoSymbol" />
   <action id="MethodHierarchy" />
   <action id="ParameterInfo" />
+  <action id="RecentChangedFiles">
+    <keyboard-shortcut first-keystroke="meta e" />
+  </action>
   <action id="RecentFiles" />
   <action id="Refresh" />
   <action id="Replace" />
