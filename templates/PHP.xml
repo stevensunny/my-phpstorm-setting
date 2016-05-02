@@ -4,7 +4,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="emulator" value="use GSSupport\Integration\EmulatorExtensionTrait;" toReformat="false" toShortenFQNames="true">
+  <template name="emulator" value="use GSSupport\Integration\EmulatorExtensionTrait;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -14,13 +14,13 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="pd" value="print_r('&lt;pre&gt;');&#10;var_dump($VARIABLE$);&#10;print_r('&lt;/pre&gt;');&#10;die;" description="dd with &lt;pre&gt; wrapper" toReformat="false" toShortenFQNames="true">
+  <template name="pd" value="print_r('&lt;pre&gt;');&#10;var_dump($VARIABLE$);&#10;print_r('&lt;/pre&gt;');&#10;die;" description="dd with &lt;pre&gt; wrapper" toReformat="true" toShortenFQNames="true">
     <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="section" value="/*&#10;|--------------------------------------------------------------------------&#10;| $SECTION_NAME$&#10;|--------------------------------------------------------------------------&#10;| $DESCRIPTION$&#10;*/" toReformat="false" toShortenFQNames="true">
+  <template name="section" value="/*&#10;|--------------------------------------------------------------------------&#10;| $SECTION_NAME$&#10;|--------------------------------------------------------------------------&#10;| $DESCRIPTION$&#10;*/" toReformat="true" toShortenFQNames="true">
     <variable name="SECTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -28,13 +28,13 @@
       <option name="PHP Comment" value="false" />
     </context>
   </template>
-  <template name="test" value="/** @test */&#10;public function it_$NAME$() {&#10;    $END$&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="test" value="/** @test */&#10;public function it_$NAME$() {&#10;    $END$&#10;}" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="textfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot;&gt;$PROPERNAME$:&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; value=&quot;{{ Input::old('$NAME$') }}&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap textfield" toReformat="false" toShortenFQNames="true">
+  <template name="textfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot;&gt;$PROPERNAME$:&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; name=&quot;$NAME$&quot; id=&quot;$NAME$&quot; class=&quot;form-control&quot; value=&quot;{{ Input::old('$NAME$') }}&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap textfield" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PROPERNAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -43,7 +43,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="passwordfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$PASSWORD$&quot;&gt;$LABEL$:&lt;/label&gt;&#10;    &lt;input type=&quot;password&quot; name=&quot;$PASSWORD$&quot; id=&quot;$PASSWORD$&quot; class=&quot;form-control&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap password field" toReformat="false" toShortenFQNames="true">
+  <template name="passwordfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$PASSWORD$&quot;&gt;$LABEL$:&lt;/label&gt;&#10;    &lt;input type=&quot;password&quot; name=&quot;$PASSWORD$&quot; id=&quot;$PASSWORD$&quot; class=&quot;form-control&quot;&gt;&#10;&lt;/div&gt;" description="Bootstrap password field" toReformat="true" toShortenFQNames="true">
     <variable name="PASSWORD" expression="" defaultValue="password" alwaysStopAt="false" />
     <variable name="LABEL" expression="" defaultValue="Password" alwaysStopAt="true" />
     <context>
@@ -52,7 +52,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="submitfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;$NAME$&lt;/button&gt;&#10;&lt;/div&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="submitfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;$NAME$&lt;/button&gt;&#10;&lt;/div&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
@@ -60,7 +60,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="validationerrors" value="@if ( count($errors) &gt; 0 )&#10;    &lt;div class=&quot;alert alert-danger&quot;&gt;&#10;        &lt;ul&gt;&#10;            @foreach( $errors-&gt;all() as $error )&#10;                &lt;li&gt;{{ $error }}&lt;/li&gt;&#10;            @endforeach&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;@endif" toReformat="false" toShortenFQNames="true">
+  <template name="validationerrors" value="@if ( count($errors) &gt; 0 )&#10;    &lt;div class=&quot;alert alert-danger&quot;&gt;&#10;        &lt;ul&gt;&#10;            @foreach( $errors-&gt;all() as $error )&#10;                &lt;li&gt;{{ $error }}&lt;/li&gt;&#10;            @endforeach&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;@endif" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
