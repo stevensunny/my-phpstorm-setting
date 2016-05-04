@@ -16,10 +16,7 @@
   <action id="GotoSymbol" />
   <action id="MethodHierarchy" />
   <action id="ParameterInfo" />
-  <action id="RecentChangedFiles">
-    <keyboard-shortcut first-keystroke="meta e" />
-  </action>
-  <action id="RecentFiles" />
+  <action id="RecentChangedFiles" />
   <action id="Refresh" />
   <action id="Replace" />
   <action id="Rerun" />
