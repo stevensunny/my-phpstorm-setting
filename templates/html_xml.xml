@@ -1,10 +1,7 @@
 <templateSet group="html/xml">
   <template name="phpunit.xml" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;phpunit backupGlobals=&quot;false&quot;&#10;         backupStaticAttributes=&quot;false&quot;&#10;         bootstrap=&quot;bootstrap/autoload.php&quot;&#10;         colors=&quot;true&quot;&#10;         convertErrorsToExceptions=&quot;true&quot;&#10;         convertNoticesToExceptions=&quot;true&quot;&#10;         convertWarningsToExceptions=&quot;true&quot;&#10;         processIsolation=&quot;false&quot;&#10;         stopOnFailure=&quot;false&quot;&#10;         syntaxCheck=&quot;false&quot;&#10;&gt;&#10;    &lt;testsuites&gt;&#10;        &lt;testsuite name=&quot;Application Test Suite&quot;&gt;&#10;            &lt;directory&gt;./app/tests/&lt;/directory&gt;&#10;        &lt;/testsuite&gt;&#10;    &lt;/testsuites&gt;&#10;&lt;/phpunit&gt;" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
-      <option name="XML_TEXT" value="true" />
-      <option name="PHP" value="false" />
     </context>
   </template>
 </templateSet>
