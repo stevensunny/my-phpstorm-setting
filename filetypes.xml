@@ -1,9 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern="element_confirmation_message.blade.php" type="PLAIN_TEXT" />
-      <mapping pattern="AdminApplicationFormInsuranceTest.php" type="PLAIN_TEXT" />
-      <mapping pattern="test" type="PLAIN_TEXT" />
+      <mapping pattern="AdminApplicationFormInsuranceTest" type="PHP" />
       <mapping ext="csv" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
