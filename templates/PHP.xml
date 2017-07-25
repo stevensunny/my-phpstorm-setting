@@ -1,15 +1,15 @@
 <templateSet group="PHP">
-  <template name="emulatorextension" value="use GSSupport\Integration\EmulatorExtensionTrait;" toReformat="false" toShortenFQNames="true">
+  <template name="emulatorextension" value="use GSSupport\Integration\EmulatorExtensionTrait;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="emulator" value="use GSSupport\Integration\EmulatorExtensionTrait;" toReformat="true" toShortenFQNames="true">
+  <template name="emulator" value="use GSSupport\Integration\EmulatorExtensionTrait;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="factory" value="use Laracasts\TestDummy\Factory;" toReformat="false" toShortenFQNames="true">
+  <template name="factory" value="use Laracasts\TestDummy\Factory;" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -20,14 +20,14 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="section" value="/*&#10;|--------------------------------------------------------------------------&#10;| $SECTION$&#10;|--------------------------------------------------------------------------&#10;*/&#10;$END$" toReformat="false" toShortenFQNames="true">
+  <template name="section" value="/*&#10;|--------------------------------------------------------------------------&#10;| $SECTION$&#10;|--------------------------------------------------------------------------&#10;*/&#10;$END$" description="" toReformat="false" toShortenFQNames="true">
     <variable name="SECTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
       <option name="PHP Comment" value="false" />
     </context>
   </template>
-  <template name="test" value="/** @test */&#10;public function it_$NAME$() {&#10;    $END$&#10;}" toReformat="true" toShortenFQNames="true">
+  <template name="test" value="/** @test */&#10;public function it_$NAME$() {&#10;    $END$&#10;}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
@@ -49,19 +49,19 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="submitfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;$NAME$&lt;/button&gt;&#10;&lt;/div&gt;" toReformat="true" toShortenFQNames="true">
+  <template name="submitfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;$NAME$&lt;/button&gt;&#10;&lt;/div&gt;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="validationerrors" value="@if ( count($errors) &gt; 0 )&#10;    &lt;div class=&quot;alert alert-danger&quot;&gt;&#10;        &lt;ul&gt;&#10;            @foreach( $errors-&gt;all() as $error )&#10;                &lt;li&gt;{{ $error }}&lt;/li&gt;&#10;            @endforeach&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;@endif" toReformat="true" toShortenFQNames="true">
+  <template name="validationerrors" value="@if ( count($errors) &gt; 0 )&#10;    &lt;div class=&quot;alert alert-danger&quot;&gt;&#10;        &lt;ul&gt;&#10;            @foreach( $errors-&gt;all() as $error )&#10;                &lt;li&gt;{{ $error }}&lt;/li&gt;&#10;            @endforeach&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;@endif" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="hiddenfield" value="&lt;input type=&quot;hidden&quot; name=&quot;$NAME$&quot; value=&quot;$VALUE$&quot;&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="hiddenfield" value="&lt;input type=&quot;hidden&quot; name=&quot;$NAME$&quot; value=&quot;$VALUE$&quot;&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -69,7 +69,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="staticfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label class=&quot;control-label&quot;&gt;$LABEL$&lt;/label&gt;&#10;    &lt;p class=&quot;form-control-static&quot;&gt;$VALUE$&lt;/p&gt;&#10;&lt;/div&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="staticfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label class=&quot;control-label&quot;&gt;$LABEL$&lt;/label&gt;&#10;    &lt;p class=&quot;form-control-static&quot;&gt;$VALUE$&lt;/p&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -77,7 +77,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="hstaticfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label class=&quot;col-lg-4 control-label&quot;&gt;$LABEL$&lt;/label&gt;&#10;    &lt;div class=&quot;col-lg-8&quot;&gt;&lt;p class=&quot;form-control-static&quot;&gt;$VALUE$&lt;/p&gt;&lt;/div&gt;&#10;&lt;/div&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="hstaticfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label class=&quot;col-lg-4 control-label&quot;&gt;$LABEL$&lt;/label&gt;&#10;    &lt;div class=&quot;col-lg-8&quot;&gt;&lt;p class=&quot;form-control-static&quot;&gt;$VALUE$&lt;/p&gt;&lt;/div&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -85,7 +85,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="selectfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;control-label&quot;&gt;$PROPERNAME$&lt;/label&gt;&#10;    &lt;div class=&quot;controls&quot;&gt;&#10;        &lt;select type=&quot;select&quot; class=&quot;form-control&quot; id=&quot;$NAME$&quot; name=&quot;$NAME$&quot;&gt;&#10;            &lt;option value=&quot;$OPTION$&quot;&gt;$OPTIONTEXT$&lt;/option&gt;&#10;        &lt;/select&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="selectfield" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;$NAME$&quot; class=&quot;control-label&quot;&gt;$PROPERNAME$&lt;/label&gt;&#10;    &lt;div class=&quot;controls&quot;&gt;&#10;        &lt;select type=&quot;select&quot; class=&quot;form-control&quot; id=&quot;$NAME$&quot; name=&quot;$NAME$&quot;&gt;&#10;            &lt;option value=&quot;$OPTION$&quot;&gt;$OPTIONTEXT$&lt;/option&gt;&#10;        &lt;/select&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PROPERNAME" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
     <variable name="OPTION" expression="" defaultValue="" alwaysStopAt="true" />
