@@ -1,7 +1,11 @@
 <keymap version="1" name="Default copy" parent="Mac OS X 10.5+">
+  <action id="ChangesView.Diff" />
   <action id="CompareTwoFiles" />
+  <action id="Console.TableResult.CloneRow" />
+  <action id="DatabaseView.CopyAction" />
   <action id="Diff.ShowDiff" />
   <action id="Diff.ShowSettingsPopup" />
+  <action id="Diff.UpdatedFiles" />
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="shift meta d" />
   </action>
@@ -11,12 +15,13 @@
     <keyboard-shortcut first-keystroke="meta r" />
   </action>
   <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="shift meta o" />
     <keyboard-shortcut first-keystroke="meta p" />
   </action>
-  <action id="GotoSymbol" />
-  <action id="MethodHierarchy" />
+  <action id="HideActiveWindow">
+    <keyboard-shortcut first-keystroke="meta escape" />
+  </action>
   <action id="ParameterInfo" />
-  <action id="RecentChangedFiles" />
   <action id="Refresh" />
   <action id="Replace" />
   <action id="Rerun" />
@@ -27,9 +32,11 @@
     <keyboard-shortcut first-keystroke="meta d" />
   </action>
   <action id="SendEOF" />
-  <action id="ShelvedChanges.Diff" />
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="ctrl h" />
+  </action>
   <action id="SplitVertically">
-    <keyboard-shortcut first-keystroke="ctrl meta v" />
+    <keyboard-shortcut first-keystroke="ctrl v" />
   </action>
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="ctrl alt enter" />
@@ -46,10 +53,13 @@
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="ctrl alt up" />
   </action>
+  <action id="TypeHierarchy" />
   <action id="Uml.ShowDiff" />
   <action id="UsageView.Rerun" />
-  <action id="Vcs.ShowMessageHistory">
-    <keyboard-shortcut first-keystroke="ctrl m" />
-  </action>
+  <action id="Vcs.QuickListPopupAction" />
   <action id="Vcs.UpdateProject" />
+  <action id="com.jetbrains.php.composer.addDependency.ComposerAddDependencyAction">
+    <keyboard-shortcut first-keystroke="ctrl meta alt c" />
+  </action>
+  <action id="openAssertEqualsDiff" />
 </keymap>
