@@ -13,5 +13,7 @@
   </component>
   <component name="TodoConfiguration">
     <pattern pattern="\breview\b.*" />
+    <pattern pattern="\btodo\b.*" />
+    <pattern pattern="\bfixme\b.*" />
   </component>
 </application>
